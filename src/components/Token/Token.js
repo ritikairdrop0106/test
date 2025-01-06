@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import "./Token.css";
+import React from 'react'
+import Form from 'react-bootstrap/Form'
+import InputGroup from 'react-bootstrap/InputGroup'
+import './Token.css'
 
 const TokenPart = (props) => {
-  const { balanceAmount, tokenaddress, setTokenAddress } = props;
+  const { balanceAmount, tokenaddress, setTokenAddress } = props
   return (
     <div className="tokenaddr">
       <InputGroup size="lg" className="inputgroup">
@@ -23,7 +23,7 @@ const TokenPart = (props) => {
         <h4>Balance : {balanceAmount.toFixed(3)}</h4>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TokenPart;
+export default TokenPart
